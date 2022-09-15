@@ -11,34 +11,18 @@
 </script>
 <body>
     <div id="error"></div>
-    <form action="" method="GET">
-        <div> 
-            <input type="text" name="name" required >
-        </div>
-        <div>
-            <input type="password" id="password" name="password" placeholder="enter password"  >
-        </div>
-        <div> 
-            <button id="submit" type="submit">submit</button>
-        </div>
-        
-        
+    <form id="form" action="" method="GET">
+      <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password">
+      </div>
+      <button type="submit">Submit</button>
     </form>
     
-    <!-- <script>
-const errorElement = document.getElementById("error");   
-const form=document.getElementById("form");
-const password = document.getElementById('password')
-form.addEventListener('submit',(e)=>{
-    
-    let messages=[];
-    e.preventDefault();
-if(password.value.length >= 2){
-    messages.push('password must be less than 2');
-}
 
-})
-        
-    </script> -->
 </body>
 </html>
