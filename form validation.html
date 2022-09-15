@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>miretu jaleta</title>
 </head>
+<script defer src="form validation.js">
+
+</script>
 <body>
-    <form action="/" method="Get">
+    <div id="error"></div>
+    <form action="" method="GET">
         <div> 
-            <input type="text" required >
+            <input type="text" name="name" required >
         </div>
         <div>
-            <input type="password" id="password" placeholder="enter password" required >
+            <input type="password" id="password" name="password" placeholder="enter password"  >
         </div>
         <div> 
             <button id="submit" type="submit">submit</button>
@@ -21,17 +25,20 @@
         
     </form>
     
-    <script>
+    <!-- <script>
 const errorElement = document.getElementById("error");   
-let form=document.getElementById("form");
-let password = document.querySelector('#password')
-form.addEventListener('submit',function(e){
-if(password.length>=6){
-    messages.push("password must be greater than six");
+const form=document.getElementById("form");
+const password = document.getElementById('password')
+form.addEventListener('submit',(e)=>{
+    
+    let messages=[];
+    e.preventDefault();
+if(password.value.length >= 2){
+    messages.push('password must be less than 2');
 }
 
 })
         
-    </script>
+    </script> -->
 </body>
 </html>
