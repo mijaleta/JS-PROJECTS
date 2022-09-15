@@ -22,7 +22,7 @@
             background-color: rgb(51, 206, 48);
         }
         #todolist{
-  
+  font-size: 30px;;
         }
 
     </style>
@@ -42,6 +42,7 @@
         var paragraph = document.createElement('p');
         paragraph.innerText = inputField.value;
         todolist.appendChild(paragraph);
+        inputField.value ='';
 
 
     })
