@@ -43,9 +43,23 @@
         paragraph.innerText = inputField.value;
         todolist.appendChild(paragraph);
         inputField.value ='';
+        paragraph.addEventListener('click',function(){
+            paragraph.style.textDecoration ="line-through"; 
+        
+        
+        })
+
+        paragraph.addEventListener('dblclick',function(){
+            paragraph.remove(); 
+        
+        
+        })
 
 
     })
+
+
+
 </script>
 </body>
 </html>
