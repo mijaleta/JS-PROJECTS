@@ -7,6 +7,8 @@ function makaUpperCase(value){
 function handleName(name,cb){
     const fullName = `${name} Jaleta`
     cb(fullName)
+    cb(fullName)
+    cb(fullName)
 }
 handleName('miretu',makaUpperCase)
 handleName('Takkalegn',(value)=>{
